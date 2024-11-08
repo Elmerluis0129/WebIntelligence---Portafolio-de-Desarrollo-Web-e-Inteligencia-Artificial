@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos y Noticias</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Archivo de estilos personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/LogoWebIntelligence.jpeg" alt="Logo WebIntelligence" style="height: 40px; width: auto;">
+            <!-- Texto opcional al lado del logo -->
+            WebIntelligence - Inteligencia en cada linea de código
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#web-dev">Desarrollo Web</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ai">Machine Learning</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Introducción -->
+    <header id="intro" class="container-fluid text-white text-center py-5" style="background: linear-gradient(45deg, #ff7eb3, #ff758c);">
+        <h1>Aquí puedes encontrar más información de interés</h1>
+        <p>WebIntelligence - Inteligencia en cada linea de código</p>
+    </header>
+
+    <!-- Botón de Menú Flotante -->
+    <div id="menu-flotante">
+        <button id="menu-toggle" class="btn btn-primary">
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Menú Lateral Izquierdo -->
+    <div id="menu-lateral">
+        <button id="close-menu" class="btn btn-primary">×</button>
+        <ul class="menu-links">
+            <li><a href="index.html#intro">Inicio</a></li>
+            <li><a href="enlaces.html">Enlaces de Interés</a></li>
+            <li><a href="articulos.html">Artículos y Noticias</a></li> <!-- Nuevo enlace a Artículos -->
+            <li><a href="privacidad.html">Políticas de Privacidad</a></li> <!-- Nuevo enlace a Privacidad -->
+        </ul>
+        <!-- Botón de Modo Oscuro -->
+        <div class="toggle-dark-mode">
+            <button id="dark-mode-toggle" class="btn btn-secondary">Modo Oscuro</button>
+        </div>
+    </div>
+
+    <!-- Sección de Artículos -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Artículo 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo1.jpg" class="card-img-top" alt="Artículo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducción a HTML5 y CSS3</h5>
+                        <p class="card-text">Aprende las bases de HTML5 y CSS3 y cómo crear sitios web modernos y responsivos.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo2.jpg" class="card-img-top" alt="Artículo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning en Python</h5>
+                        <p class="card-text">Explora cómo implementar modelos de Machine Learning usando Python y scikit-learn.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo3.jpg" class="card-img-top" alt="Artículo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Consejos de SEO para Desarrolladores</h5>
+                        <p class="card-text">Conoce las mejores prácticas de SEO para mejorar la visibilidad de tus sitios web.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 2 de Artículos -->
+        <div class="row">
+            <!-- Artículo 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo4.jpg" class="card-img-top" alt="Artículo 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Frameworks Populares de JavaScript</h5>
+                        <p class="card-text">Una revisión de los frameworks más populares de JavaScript, como React, Vue y Angular.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo5.jpg" class="card-img-top" alt="Artículo 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Redes Neuronales Artificiales</h5>
+                        <p class="card-text">Descubre cómo funcionan las redes neuronales y su aplicación en proyectos de IA.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/articulo6.jpg" class="card-img-top" alt="Artículo 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Herramientas de Análisis de Datos</h5>
+                        <p class="card-text">Herramientas esenciales para el análisis de datos en Python, como Pandas y Matplotlib.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Elmer Luis Saint-Hilare Rojo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- Archivo JavaScript personalizado -->
+     <script src="js/main.js"></script>
+</body>
+</html>

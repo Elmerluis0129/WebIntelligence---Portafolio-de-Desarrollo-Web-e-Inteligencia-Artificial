@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Políticas de Privacidad</title>
+    <!-- Icono de la página (favicon) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Archivos de estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/privacidad.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/LogoWebIntelligence.jpeg" alt="Logo WebIntelligence" style="height: 40px; width: auto;">
+            WebIntelligence - Inteligencia en cada línea de código
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#web-dev">Desarrollo Web</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ai">Machine Learning</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Introducción -->
+    <header id="intro" class="container-fluid text-white text-center py-5" style="background: linear-gradient(45deg, #ff7eb3, #ff758c);">
+        <h1>Políticas de seguridad</h1>
+        <p>¡Protegiendote nos protegemos!</p>
+        <p>¡Gracias por tomarte tu tiempo y leerlas!</p>
+    </header>
+    
+    <section class="container my-5">
+        <div class="privacidad-contenedor p-4 rounded shadow">
+            <h2 class="text-primary font-weight-bold">Nuestras Políticas</h2>
+            <p>Tu privacidad es importante para nosotros. Nos esforzamos en proteger cualquier dato que nos proporciones.</p>
+            
+            <h3 class="text-secondary mt-4">Principios de Privacidad</h3>
+            <ul class="lista-privacidad mt-3">
+                <li>
+                    <span>Recopilación de datos solo con el consentimiento del usuario.</span>
+                    <div class="descripcion">Recopilamos datos personales solo cuando el usuario da su consentimiento explícito.</div>
+                    <span class="check">&#10004;</span>
+                </li>
+                <li>
+                    <span>Uso de los datos exclusivamente para los fines especificados.</span>
+                    <div class="descripcion">Los datos que recopilamos se utilizan únicamente para los fines comunicados al usuario.</div>
+                    <span class="check">&#10004;</span>
+                </li>
+                <li>
+                    <span>Protección de la información mediante protocolos de seguridad.</span>
+                    <div class="descripcion">Implementamos medidas de seguridad avanzadas para proteger la información del usuario.</div>
+                    <span class="check">&#10004;</span>
+                </li>
+                <li>
+                    <span>Derecho del usuario a acceder, modificar y eliminar sus datos.</span>
+                    <div class="descripcion">El usuario tiene total control sobre sus datos y puede solicitar modificaciones o eliminación.</div>
+                    <span class="check">&#10004;</span>
+                </li>
+                <li>
+                    <span>No compartimos información con terceros sin consentimiento previo.</span>
+                    <div class="descripcion">Garantizamos que la información del usuario no se compartirá sin su autorización.</div>
+                    <span class="check">&#10004;</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Botón de Menú Flotante -->
+    <div id="menu-flotante">
+        <button id="menu-toggle" class="btn btn-primary">
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Menú Lateral Izquierdo -->
+    <div id="menu-lateral">
+        <button id="close-menu" class="btn btn-primary">×</button>
+        <ul class="menu-links">
+            <li><a href="index.html#intro">Inicio</a></li>
+            <li><a href="enlaces.html">Enlaces de Interés</a></li>
+            <li><a href="articulos.html">Artículos y Noticias</a></li>
+            <li><a href="privacidad.html">Políticas de Privacidad</a></li>
+        </ul>
+        <!-- Botón de Modo Oscuro -->
+        <div class="toggle-dark-mode">
+            <button id="dark-mode-toggle" class="btn btn-secondary">Modo Oscuro</button>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Elmer Luis Saint-Hilare Rojo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>

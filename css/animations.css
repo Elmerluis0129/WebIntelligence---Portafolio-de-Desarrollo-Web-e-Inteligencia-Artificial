@@ -1,0 +1,172 @@
+/* Animación de Hover en el botón de menú */
+#menu-toggle:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Transformación de las barras del icono de menú al abrir y cerrar */
+#menu-toggle::before,
+#menu-toggle::after,
+#menu-toggle span {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Línea superior */
+#menu-toggle::before {
+    top: 14px;
+}
+
+/* Línea inferior */
+#menu-toggle::after {
+    top: 26px;
+}
+
+/* Línea del medio */
+#menu-toggle span {
+    top: 20px;
+}
+
+/* Animación al abrir el menú */
+#menu-lateral.open + #menu-flotante #menu-toggle::before {
+    transform: rotate(45deg);
+    top: 20px;
+}
+
+#menu-lateral.open + #menu-flotante #menu-toggle::after {
+    transform: rotate(-45deg);
+    top: 20px;
+}
+
+#menu-lateral.open + #menu-flotante #menu-toggle span {
+    opacity: 0;
+}
+
+/* Animación de Hover en los enlaces del menú */
+.menu-links a {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-links a:hover {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño en hover */
+    background-color: #555; /* Cambia el color de fondo en hover */
+    border-radius: 5px;
+}
+
+/* Efecto de desvanecimiento y desplazamiento de los enlaces en el menú lateral */
+.menu-links li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#menu-lateral.open .menu-links li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#menu-lateral.open .menu-links li:nth-child(1) { transition-delay: 0.1s; }
+#menu-lateral.open .menu-links li:nth-child(2) { transition-delay: 0.2s; }
+#menu-lateral.open .menu-links li:nth-child(3) { transition-delay: 0.3s; }
+#menu-lateral.open .menu-links li:nth-child(4) { transition-delay: 0.4s; }
+
+/* Animación para el botón de Modo Oscuro */
+#dark-mode-toggle {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #7b2cbf; /* Color más claro en hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+
+/* Efectos de transición para el modo oscuro */
+body, .navbar, #menu-lateral, .btn {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Efecto de Hover en las tarjetas de proyecto */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agranda ligeramente la tarjeta */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+}
+
+/* Animación para el botón "Ir Arriba" */
+#scrollTopBtn {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn.show {
+    opacity: 0.8;
+}
+
+#scrollTopBtn:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta ligeramente en hover */
+}
+
+/* Animación de carga de página */
+#loadingSpinner .spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Animación personalizada para el botón de contacto en hover */
+@keyframes contactoHover {
+    0% { transform: scale(1); background-color: #007bff; }
+    50% { transform: scale(1.1); background-color: #0056b3; }
+    100% { transform: scale(1); background-color: #007bff; }
+}
+
+.btn-contacto {
+    animation: contactoHover 1s ease-in-out infinite alternate;
+}
+
+.btn-contacto:hover {
+    animation-play-state: paused; /* Pausa la animación en hover para aplicar el efecto de transform */
+}
+
+/* Animación para el botón de contacto */
+.btn-contacto {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación y estilo para los iconos de redes sociales */
+.social-icons .social-icon {
+    color: #007bff; /* Color inicial */
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.2); /* Aumenta el tamaño del icono */
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra ligera */
+}

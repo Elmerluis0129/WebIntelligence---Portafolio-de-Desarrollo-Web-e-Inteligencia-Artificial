@@ -1,0 +1,130 @@
+/* Estilos del Botón Flotante */
+#menu-flotante {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posición inicial */
+    z-index: 1000;
+    transition: left 0.3s ease; /* Transición para el movimiento */
+}
+
+/* Menú Abierto - Mueve el botón flotante más a la derecha */
+#menu-flotante.menu-open {
+    left: 270px; /* Ajusta este valor según el ancho del menú lateral */
+}
+
+
+/* Menú Lateral Izquierdo */
+#menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    transition: left 0.3s ease;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón para cerrar el menú */
+#close-menu {
+    align-self: flex-end;
+    margin: 10px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación fija */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilos de los enlaces del menú */
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    width: 100%;
+}
+
+.menu-links li {
+    margin: 10px 0;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.menu-links a:hover {
+    background-color: #555;
+    border-radius: 5px; /* Bordes redondeados en hover */
+}
+
+/* Menú abierto - Mueve el menú lateral a la vista */
+#menu-lateral.open {
+    left: 0;
+}
+
+/* Estilos específicos del botón de menú */
+#menu-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor para el botón de Modo Oscuro */
+.toggle-dark-mode {
+    margin-top: auto; /* Empuja el botón hacia la parte inferior del menú */
+    margin-bottom: 20px; /* Añade espacio debajo del botón */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos del botón de Modo Oscuro */
+#dark-mode-toggle {
+    background-color: #5a189a; /* Un morado oscuro atractivo */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80%; /* Alinea el ancho del botón */
+    max-width: 200px; /* Limita el ancho máximo del botón */
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+#dark-mode-toggle:hover {
+    background-color: #7b2cbf;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
